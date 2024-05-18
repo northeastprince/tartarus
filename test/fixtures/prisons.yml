@@ -1,0 +1,13 @@
+DEFAULTS: &DEFAULTS
+  world_id: 1
+
+cave:
+  <<: *DEFAULTS
+  name: Billy Bishop Cave
+  location: Toronto
+
+dungeon:
+  <<: *DEFAULTS
+  name: Down Under Dungeon
+  location: Australia
+  security_level: maximum
