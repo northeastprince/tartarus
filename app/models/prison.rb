@@ -2,6 +2,7 @@ class Prison < ApplicationRecord
   belongs_to :world
 
   include Name
+  include Recorded
 
   enum :security_level, %w[minimum maximum].index_by(&:itself), suffix: "_security"
   validates_presence_of :security_level
